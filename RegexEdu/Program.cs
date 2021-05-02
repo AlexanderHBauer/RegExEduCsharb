@@ -52,7 +52,7 @@ namespace RegexEdu
             string numberPattern = "\\d+";
             Regex splitRegex = new Regex(numberPattern);
             Console.WriteLine("Split results:");
-            var splitText = splitRegex.Split(alphanumbericString);
+            string[] splitText = splitRegex.Split(alphanumbericString);
             foreach (string match in splitText)
                 Console.WriteLine(match);
             Console.WriteLine();
